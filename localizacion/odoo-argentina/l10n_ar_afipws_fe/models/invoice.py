@@ -372,7 +372,7 @@ print "Observaciones:", wscdc.Obs
     @api.multi
     def do_pyafipws_request_cae(self):
         "Request to AFIP the invoices' Authorization Electronic Code (CAE)"
-        import pdb; pdb.set_trace()
+        #import pdb; pdb.set_trace()
         for inv in self:
             # Ignore invoices with cae (do not check date)
             if inv.afip_auth_code:
