@@ -29,7 +29,7 @@
             <span t-field="o.journal_document_type_id.document_type_id.document_letter_id.name"/>
           </div>
           <div style="font-size: 12px;">
-            cod. <span t-field="o.journal_document_type_id.document_type_id.document_letter_id.code"/>
+            cod. <span t-field="o.journal_document_type_id.document_type_id.code"/>
           </div>
         </div>
 
