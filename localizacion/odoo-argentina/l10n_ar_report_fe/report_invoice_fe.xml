@@ -25,7 +25,7 @@
           <span style="font-size: 11px; font-weight: bold;">Comprobante<br/>electrónico</span>
         </div>
         <div class="col-2 text-center">
-          <div style="display: block !important; width: 100%; margin-top: 10px; border: 1px solid black; border-radius: 5px; font-size: 48px; background-color: gray;">
+          <div style="display: block !important; float: left !important; width: 90px !important; height: 70px !important;  margin-top: 10px !important; border: solid 1px black !important; border-radius: 5px; font-size: 48px; background-color: #777 !important;">
             <span t-field="o.journal_document_type_id.document_type_id.document_letter_id.name"/>
           </div>
           <div style="font-size: 12px;">
