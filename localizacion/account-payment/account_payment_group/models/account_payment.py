@@ -85,6 +85,8 @@ class AccountPayment(models.Model):
     @api.depends('currency_id', 'company_currency_id')
     def _compute_other_currency(self):
         for rec in self:
+            _logger.info("rec.company_currency_id:",rec.company_currency_id)
+            _logger.info("rec.currency_id:",rec.currency_id)
             if rec.company_currency_id and rec.currency_id and \
                     rec.company_currency_id != rec.currency_id:
                 rec.other_currency = True
