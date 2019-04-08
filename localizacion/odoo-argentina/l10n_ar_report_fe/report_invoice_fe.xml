@@ -25,8 +25,11 @@
           <span style="font-size: 11px; font-weight: bold;">Comprobante<br/>electrónico</span>
         </div>
         <div class="col-2 text-center">
-          <div style="display: block; margin-top: 10px; border: 1px solid black; border-radius: 5px; font-size: 48px; background-color: gray;">
+          <div style="display: block !important; width: 100%; margin-top: 10px; border: 1px solid black; border-radius: 5px; font-size: 48px; background-color: gray;">
             <span t-field="o.journal_document_type_id.document_type_id.document_letter_id.name"/>
+          </div>
+          <div style="font-size: 12px;">
+            cod. <span t-field="o.journal_document_type_id.document_type_id.document_letter_id.code"/>
           </div>
         </div>
 
@@ -57,7 +60,7 @@
           </div>
           <div class="col-6">
             <p><br/></p>
-            <p><strong>CUIT</strong> <span t-field="o.company_id.main_id_number"/> - <span t-field="o.partner_id.afip_responsability_type_id.name"/></p>
+            <p><strong>CUIT</strong> <span t-field="o.company_id.main_id_number"/> - <span t-field="company.partner_id.afip_responsability_type_id.name"/></p>
             <p>Ingresos Brutos: XXXXXXXX - Inicio de actividades: XXXXXX</p>
           </div>
       </div>
